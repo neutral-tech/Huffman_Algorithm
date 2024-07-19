@@ -58,6 +58,7 @@ public class Huffman {
         }
         return ans;
     }
+    //Method for decoding the message
     public String decode(String code){
         String key="";
         String ans="";
@@ -72,6 +73,7 @@ public class Huffman {
         }
         return ans;
     }
+    //Method for filling the encoder and decoder table
     private void filltable(Node root,String str){
         if(root==null) return;
         else if(root.left==null && root.right==null){
